@@ -1,0 +1,71 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.grid {
+	display: grid;
+	max-width: 800px;
+	margin: auto;
+	padding: 60px 0;
+	gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr;
+}
+
+.encabezado {
+	grid-column: span 3;
+	text-align: center;
+}
+
+.caja {
+	padding: 40px;
+	border-radius: 5px;
+	background: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 20px 0px rgba(170, 170, 170, 0.1);
+}
+
+.boton {
+	background: rgb(3, 1, 85);
+	color: #fff;
+	width: 25%;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding: 30px;
+	transition: .3s ease all;
+}
+
+.boton:hover {
+	background: rgb(64, 148, 64);
+}
